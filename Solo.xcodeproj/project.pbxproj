@@ -12,7 +12,6 @@
 		49F902322445E88100728B74 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F902312445E88100728B74 /* libglfw.3.3.dylib */; };
 		49F902342445E8A400728B74 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F902332445E8A400728B74 /* libGLEW.2.1.0.dylib */; };
 		49F902372445E8B300728B74 /* Solo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49F902352445E8B300728B74 /* Solo.cpp */; };
-		49F9023C2445E8FA00728B74 /* Display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49F9023A2445E8FA00728B74 /* Display.cpp */; };
 		49F902402445EB4000728B74 /* Solo_EntryPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49F9023E2445EB4000728B74 /* Solo_EntryPoint.cpp */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +35,6 @@
 		49F902332445E8A400728B74 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.1.0_1/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		49F902352445E8B300728B74 /* Solo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Solo.cpp; sourceTree = "<group>"; };
 		49F902362445E8B300728B74 /* Solo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Solo.hpp; sourceTree = "<group>"; };
-		49F9023A2445E8FA00728B74 /* Display.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Display.cpp; sourceTree = "<group>"; };
-		49F9023B2445E8FA00728B74 /* Display.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Display.hpp; sourceTree = "<group>"; };
 		49F9023E2445EB4000728B74 /* Solo_EntryPoint.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Solo_EntryPoint.cpp; sourceTree = "<group>"; };
 		49F9023F2445EB4000728B74 /* Solo_EntryPoint.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Solo_EntryPoint.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				49F9023D2445EB3700728B74 /* Solo */,
-				49F902392445E8EA00728B74 /* Display */,
-				49F902382445E8E500728B74 /* Render */,
 				49F902272445E37100728B74 /* main.cpp */,
 				49F902352445E8B300728B74 /* Solo.cpp */,
 				49F902362445E8B300728B74 /* Solo.hpp */,
@@ -94,22 +89,6 @@
 				49F9022F2445E86600728B74 /* OpenGL.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		49F902382445E8E500728B74 /* Render */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Render;
-			sourceTree = "<group>";
-		};
-		49F902392445E8EA00728B74 /* Display */ = {
-			isa = PBXGroup;
-			children = (
-				49F9023A2445E8FA00728B74 /* Display.cpp */,
-				49F9023B2445E8FA00728B74 /* Display.hpp */,
-			);
-			path = Display;
 			sourceTree = "<group>";
 		};
 		49F9023D2445EB3700728B74 /* Solo */ = {
@@ -181,7 +160,6 @@
 				49F902402445EB4000728B74 /* Solo_EntryPoint.cpp in Sources */,
 				49F902372445E8B300728B74 /* Solo.cpp in Sources */,
 				49F902282445E37100728B74 /* main.cpp in Sources */,
-				49F9023C2445E8FA00728B74 /* Display.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
