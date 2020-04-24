@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49224F982452F06500832E54 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49224F962452F06500832E54 /* Model.cpp */; };
+		49224F9B2452F1EA00832E54 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49224F992452F1EA00832E54 /* Shader.cpp */; };
 		49F902282445E37100728B74 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49F902272445E37100728B74 /* main.cpp */; };
 		49F902302445E86600728B74 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F9022F2445E86600728B74 /* OpenGL.framework */; };
 		49F902322445E88100728B74 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F902312445E88100728B74 /* libglfw.3.3.dylib */; };
@@ -28,6 +30,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		49224F962452F06500832E54 /* Model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		49224F972452F06500832E54 /* Model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
+		49224F992452F1EA00832E54 /* Shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		49224F9A2452F1EA00832E54 /* Shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
 		49F902242445E37100728B74 /* Solo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Solo; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F902272445E37100728B74 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		49F9022F2445E86600728B74 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -53,6 +59,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49224F952452F05C00832E54 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				49224F962452F06500832E54 /* Model.cpp */,
+				49224F972452F06500832E54 /* Model.hpp */,
+				49224F992452F1EA00832E54 /* Shader.cpp */,
+				49224F9A2452F1EA00832E54 /* Shader.hpp */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
 		49F9021B2445E37100728B74 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +111,7 @@
 		49F9023D2445EB3700728B74 /* Solo */ = {
 			isa = PBXGroup;
 			children = (
+				49224F952452F05C00832E54 /* Render */,
 				49F9023E2445EB4000728B74 /* Solo_EntryPoint.cpp */,
 				49F9023F2445EB4000728B74 /* Solo_EntryPoint.hpp */,
 			);
@@ -160,6 +178,8 @@
 				49F902402445EB4000728B74 /* Solo_EntryPoint.cpp in Sources */,
 				49F902372445E8B300728B74 /* Solo.cpp in Sources */,
 				49F902282445E37100728B74 /* main.cpp in Sources */,
+				49224F982452F06500832E54 /* Model.cpp in Sources */,
+				49224F9B2452F1EA00832E54 /* Shader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

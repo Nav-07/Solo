@@ -20,7 +20,10 @@ void Solo_EntryPoint::constructWindow(std::string title, unsigned int width, uns
 void Solo_EntryPoint::start() {
     this->OnInit();
     while (mIsOpen) {
-        glClear(GL_COLOR_BUFFER_BIT);
+        if (glfwWindowShouldClose(mWindow))
+            mIsOpen = false;
+        
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glClearColor(.0f, .0f, .0f, 1.0f);
         
         this->OnHandleEvents();
