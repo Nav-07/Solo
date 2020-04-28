@@ -7,7 +7,11 @@ private:
 protected:
     void OnInit() override {
         shader = new Shader("res/Vertex.txt", "res/Fragment.txt");
-        model = new Model({0.0f, 0.5f, 0.0f, -0.5f, -0.5f, 0.0f, 0.5f, -0.5f, 0.0f});
+        model = new Model({0.5f,  0.5f, 0.0f,  // top right
+             0.5f, -0.5f, 0.0f,  // bottom right
+            -0.5f, -0.5f, 0.0f,  // bottom left
+            -0.5f,  0.5f, 0.0f}, {0, 1, 3,   // first triangle
+                1, 2, 3});
     }
     void OnHandleEvents() override {}
     void OnUpdate() override {}
